@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Stock Excel</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 100px; background: #f8f9fa; }
+        form { background: white; padding: 30px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        input[type="file"] { margin-bottom: 20px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        <h2>Upload Stock Excel File</h2>
+        <input type="file" name="stock_excel" accept=".xlsx" required><br>
+        <button type="submit">Upload & Update</button>
+    </form>
+</body>
+</html>

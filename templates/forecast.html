@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Forecasts</title>
+</head>
+<body>
+    <h1>Sales Forecasts for All Products</h1>
+    {% for graph in graphs %}
+        <div style="margin-bottom: 30px;">
+            <img src="{{ url_for('static', filename=graph) }}" alt="{{ graph }}" width="600">
+        </div>
+    {% endfor %}
+</body>
+</html>
